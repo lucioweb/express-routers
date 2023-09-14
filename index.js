@@ -48,6 +48,6 @@ app.get('/alunos', (req, res) => {
     res.json({ alunos: Object.values(alunos) })
 })
 
-app.listen(8080, () => {
-    console.log('Servidor pronto na porta 8080')
+app.listen(3000, () => {
+    console.log('Servidor pronto na porta 3000')
 })
