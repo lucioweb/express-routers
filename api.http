@@ -1,0 +1,20 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/alunos
+
+### 
+
+DELETE http://localhost:8080/alunos/9981e66a-ecf9-43a7-8cd0-045b41e9bf37
+
+###
+
+POST http://localhost:8080/alunos
+Content-type: application/json
+
+{
+    "nome": "Pedro",
+    "endereco":"Rua Alexandrino de Alencar 1592"
+   
+}
