@@ -13,30 +13,30 @@ app.get('/alunos/:id', (req, res) => {
     res.json({ aluno: alunos[req.params.id] })
 })
 
-app.put('/alunos', (req, res) => {
+app.put('/editar', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
         const aluno = req.body
         aluno.id = id
         alunos[id] = aluno
-        res.json({ msg: "Aluno atualizado com sucesso!" })
+        res.json({ msg: "Cadastro atualizado com sucesso!" })
     } else {
-        res.status(400).json({ msg: "Aluno não encontrado!" })
+        res.status(400).json({ msg: "Registro não encontrado!" })
     }
 
 })
 
-app.delete('/alunos', (req, res) => {
+app.delete('/excluir', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
         delete alunos[id]
-        res.json({ msg: "Aluno deletado com sucesso!" })
+        res.json({ msg: "Aluno deletado da base de dados com sucesso!" })
     } else {
         res.status(400).json({ msg: "Aluno não encontrado!" })
     }
 })
 
-app.post('/alunos', (req, res) => {
+app.post('/cadastrar', (req, res) => {
     const aluno = req.body
     const idAluno = uuidv4()
     aluno.id = idAluno
@@ -44,8 +44,8 @@ app.post('/alunos', (req, res) => {
     res.json({ msg: "Aluno adicionado com sucesso!" })
 })
 
-app.get('/alunos', (req, res) => {
-    res.json({ alunos: Object.values(alunos) })
+app.get('/listar', (req, res) => {
+    res.json({ listar: Object.values(alunos) })
 })
 
 app.listen(8080, () => {

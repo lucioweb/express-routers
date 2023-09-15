@@ -2,23 +2,22 @@ GET http://localhost:8080/
 
 ###
 
-GET http://localhost:8080/alunos
+GET http://localhost:8080/listar
 
 ###
 
-POST http://localhost:8080/alunos
+POST http://localhost:8080/cadastrar
 Content-type: application/json
 
 {
     "nome": "Lúcio",
     "endereco":"Rua Alexandrino de Alencar 1592",
-    "RG": "1010297644/MD"
-   
+    "RG": "1010297644/MD"   
 }
 
 ###
 
-PUT http://localhost:8080/alunos?id=abe043be-b771-47cd-981f-a4dc8d936159
+PUT http://localhost:8080/editar?id=61547cbc-71f7-4b8a-a1d4-2267a954433e
 Content-type: application/json
 
 {
@@ -30,4 +29,4 @@ Content-type: application/json
 
 ### 
 
-DELETE http://localhost:8080/alunos?id=abe043be-b771-47cd-981f-a4dc8d936159
+DELETE http://localhost:8080/excluir?id=61547cbc-71f7-4b8a-a1d4-2267a954433e
