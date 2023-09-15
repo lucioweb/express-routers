@@ -6,7 +6,7 @@ app.use(express.json())
 const alunos = {}
 
 app.get('/', (req, res) => {
-    res.json({ msg: "Hello from Express!" })
+    res.json({ msg: "Hello!" })
 })
 
 app.get('/alunos/:id', (req, res) => {
@@ -48,6 +48,6 @@ app.get('/alunos', (req, res) => {
     res.json({ alunos: Object.values(alunos) })
 })
 
-app.listen(3000, () => {
-    console.log('Servidor pronto na porta 3000')
+app.listen(8080, () => {
+    console.log('Servidor pronto na porta 8080')
 })
