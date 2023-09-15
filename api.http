@@ -1,8 +1,13 @@
 GET http://localhost:8080/
 
+
 ###
 
 GET http://localhost:8080/listar
+
+###
+
+GET http://localhost:8080/pesquisar/440b1e56-de3a-451c-8172-449704310859
 
 ###
 
@@ -11,17 +16,17 @@ Content-type: application/json
 
 {
     "nome": "Lúcio",
-    "endereco":"Rua Alexandrino de Alencar 1592",
+    "endereco":"Rua Lúcio Viveiros 1112",
     "RG": "1010297644/MD"   
 }
 
 ###
 
-PUT http://localhost:8080/editar?id=61547cbc-71f7-4b8a-a1d4-2267a954433e
+PUT http://localhost:8080/editar?id=f714e617-5664-4235-ac61-793d6f2cb1b5
 Content-type: application/json
 
 {
-    "nome": "Lúcio Lemos",
+    "nome": "Lúcio Flávio Lemos",
     "endereco":"Rua Alexandrino de Alencar 1592",
     "RG": "1010297644/MD"
    

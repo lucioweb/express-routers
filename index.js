@@ -5,14 +5,18 @@ app.use(express.json())
 
 const alunos = {}
 
+// MÉTODO GET - ROTA BARRA
 app.get('/', (req, res) => {
     res.json({ msg: "Hello!" })
 })
 
-app.get('/alunos/:id', (req, res) => {
+
+// MÉTODO GET - ROTA PESQUISAR (GET by Id)
+app.get('/pesquisar/:id', (req, res) => {
     res.json({ aluno: alunos[req.params.id] })
 })
 
+// MÉTODO PUT - ROTA EDITAR
 app.put('/editar', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
@@ -26,6 +30,7 @@ app.put('/editar', (req, res) => {
 
 })
 
+// MÉTODO DELETE - ROTA EXCLUIR
 app.delete('/excluir', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
@@ -36,6 +41,7 @@ app.delete('/excluir', (req, res) => {
     }
 })
 
+// MÉTODO POST - ROTA CADASTRAR
 app.post('/cadastrar', (req, res) => {
     const aluno = req.body
     const idAluno = uuidv4()
@@ -44,10 +50,12 @@ app.post('/cadastrar', (req, res) => {
     res.json({ msg: "Aluno adicionado com sucesso!" })
 })
 
+// MÉTODO GET - ROTA LISTAR
 app.get('/listar', (req, res) => {
     res.json({ listar: Object.values(alunos) })
 })
 
+// INICIALIZANDO O SERVIDOR
 app.listen(8080, () => {
     console.log('Servidor pronto na porta 8080')
 })

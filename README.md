@@ -1,17 +1,19 @@
-# EXPRESS - EXERCÍCIO
+# EXPRESS ROOUTES
+Este é um projeto Node JS com express. 
+Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consitência das rotas no arquivo index.js.
 ### 1 - DEPENDÊNCIAS INSTALADAS
 
-####  - NODEMON
+####  ✔️ NODEMON
 
     $ npm install --save-dev nodemon
 
 
-####  - UUID
+####  ✔️ UUID
         
     $ npm install uuid --save
 
 
-####  - EXPRESS
+####  ✔️ EXPRESS
 
     $ npm install express --save
 
