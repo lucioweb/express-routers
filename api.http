@@ -7,7 +7,7 @@ GET http://localhost:8080/listar
 
 ###
 
-GET http://localhost:8080/pesquisar/440b1e56-de3a-451c-8172-449704310859
+GET http://localhost:8080/pesquisar/42ac6171-7c74-47e6-9fa9-c21b35cf9db8
 
 ###
 
@@ -15,18 +15,18 @@ POST http://localhost:8080/cadastrar
 Content-type: application/json
 
 {
-    "nome": "Lúcio",
+    "nome": "FLDFGDGDFGDGDF",
     "endereco":"Rua Lúcio Viveiros 1112",
     "RG": "1010297644/MD"   
 }
 
 ###
 
-PUT http://localhost:8080/editar?id=f714e617-5664-4235-ac61-793d6f2cb1b5
+PUT http://localhost:8080/editar?id=7f563eca-f117-4889-8be2-de468b5811df
 Content-type: application/json
 
 {
-    "nome": "Lúcio Flávio Lemos",
+    "nome": "Lúcio",
     "endereco":"Rua Alexandrino de Alencar 1592",
     "RG": "1010297644/MD"
    
@@ -34,4 +34,4 @@ Content-type: application/json
 
 ### 
 
-DELETE http://localhost:8080/excluir?id=61547cbc-71f7-4b8a-a1d4-2267a954433e
+DELETE http://localhost:8080/excluir?id=42ac6171-7c74-47e6-9fa9-c21b35cf9db8
