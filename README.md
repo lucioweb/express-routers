@@ -1,6 +1,7 @@
-# EXPRESS ROOUTES
+# EXPRESS ROUTES
 Este é um projeto Node JS com express. 
 Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consistência das rotas no arquivo index.js.
+<img src="https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white" />
 ### 1 - DEPENDÊNCIAS INSTALADAS
 
 ####  ✔️ NODEMON
