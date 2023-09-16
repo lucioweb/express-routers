@@ -1,6 +1,7 @@
 # EXPRESS ROUTES
 Este é um projeto Node JS com express. 
-Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consistência das rotas no arquivo index.js.<br>
+Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consistência das rotas no arquivo index.js.
+<br>
     <img src="http://ForTheBadge.com/images/badges/made-with-javascript.svg" />
 ### 1 - DEPENDÊNCIAS INSTALADAS
 
