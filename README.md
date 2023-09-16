@@ -1,4 +1,5 @@
-   <img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" />
+<img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" />
+
 # EXPRESS ROUTES
 Este é um projeto Node JS com express. 
 Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consistência das rotas no arquivo index.js.
