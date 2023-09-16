@@ -9,7 +9,7 @@ Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar re
 ####  ✔️ NODEMON
 
     $ npm install --save-dev nodemon
-
+A flag `--save-dev` indica que a biblioteca será instalada apenas como dependência de desenvolvimento. Por ocasião do deploy essa dependência não será instalada no servidor de produção. 
 
 ####  ✔️ UUID
         
