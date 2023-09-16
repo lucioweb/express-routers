@@ -1,12 +1,15 @@
-# EXPRESS ROOUTES
+<img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" />
+
+# EXPRESS ROUTES
 Este é um projeto Node JS com express. 
 Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar requisições ao servidor via browser e testar a consistência das rotas no arquivo index.js.
+
 ### 1 - DEPENDÊNCIAS INSTALADAS
 
 ####  ✔️ NODEMON
   
     $ npm install --save-dev nodemon
-
+A flag `--save-dev` indica que a biblioteca nodemon será instalada apenas como dependência de desenvolvimento. Por ocasião do deploy do projeto, essa dependência não será instalada no servidor de produção. 
 
 ####  ✔️ UUID
         
