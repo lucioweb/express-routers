@@ -4,7 +4,7 @@ Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar re
 ### 1 - DEPENDÊNCIAS INSTALADAS
 
 ####  ✔️ NODEMON
-
+  
     $ npm install --save-dev nodemon
 
 
@@ -63,3 +63,5 @@ Um CRUD básico que utiliza a extensão `REST Client` do VSCode para realizar re
     ### 
 
     DELETE http://localhost:8080/excluir?id=abe043be-b771-47cd-981f-a4dc8d936159
+    
+

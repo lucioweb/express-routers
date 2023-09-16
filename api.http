@@ -15,8 +15,8 @@ POST http://localhost:8080/cadastrar
 Content-type: application/json
 
 {
-    "nome": "FLDFGDGDFGDGDF",
-    "endereco":"Rua Lúcio Viveiros 1112",
+    "nome": "Lemos",
+    "endereco":"Rua Lúcia Viveiros nº 1112",
     "RG": "1010297644/MD"   
 }
 

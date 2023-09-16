@@ -7,7 +7,7 @@ const alunos = {}
 
 // MÉTODO GET - ROTA BARRA
 app.get('/', (req, res) => {
-    res.json({ msg: "Hello!" })
+    res.json({ msg: "Olá! Bem vindo ao projeto Node JS com express!" })
 })
 
 
