@@ -7,7 +7,7 @@ GET http://localhost:8080/aluno
 
 ###
 
-GET http://localhost:8080/alunos/42ac6171-7c74-47e6-9fa9-c21b35cf9db8
+GET http://localhost:8080/aluno/42ac6171-7c74-47e6-9fa9-c21b35cf9db8
 
 ###
 
@@ -22,7 +22,7 @@ Content-type: application/json
 
 ###
 
-PUT http://localhost:8080/aluno?id=f6a3c544-260d-47a1-83db-d2bea274b520
+PUT http://localhost:8080/aluno?id=c2d8643e-92b3-47e2-a609-418f0352947a
 Content-type: application/json
 
 {
@@ -34,4 +34,4 @@ Content-type: application/json
 
 ### 
 
-DELETE http://localhost:8080/aluno?id=f6a3c544-260d-47a1-83db-d2bea274b520
+DELETE http://localhost:8080/aluno?id=c2d8643e-92b3-47e2-a609-418f0352947a

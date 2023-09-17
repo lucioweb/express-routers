@@ -19,52 +19,32 @@ A flag `--save-dev` indica que a biblioteca nodemon será instalada apenas como 
 ####  ✔️ EXPRESS
 
     $ npm install express --save
+Tendo sua versão inicial lançada no ano de 2010, o Express.js (ou somente Express) é um Framework para o desenvolvimento de aplicações JavaScript com o Node.js. De código aberto, sob licença MIT, o `Express.js` foi desenvolvido para otimizar a construção de aplicações web e APIs, tornando-se um dos frameworks mais populares da internet.
+
+##### Características do Express.js
+O Express é um framework incrível e possui diversas características que facilitam o desenvolvimento de nossas aplicações. Dentre suas principais características, podemos citar:
+
+* Possui um sistema de rotas completo;
+* Possibilita o tratamento de exceções dentro da aplicação;
+* Permite a integração de vários sistemas de templates que facilitam a criação de * páginas web para suas aplicações;
+* Gerencia diferentes requisições HTTP com seus mais diversos verbos;
+* Feito para a criação rápida de aplicações utilizando um conjunto pequeno de arquivos e pastas;
+* Gerenciar requisições de diferentes verbos HTTP em diferentes URLs.
+* Integrar "view engines" para inserir dados nos templates.
+* Definir as configurações comuns da aplicação web, como a porta a ser usada para conexão e a localização dos modelos que são usados para renderizar a resposta.
+* Adicionar novos processos de requisição por meio de "middleware" em qualquer ponto da "fila" de requisições.
 
 ### 2 - SCRIPT DE INICIALIZAÇÃO DO SERVIDOR EXPRESS NO `package.json` COM O NODEMON
 
     ...
 
     "scripts": {
-      "dev": "nodemon index.js"      
+      "dev": "nodemon app.js"      
      },
 
      ...
 
 
-### 3 - REQUISIÇÕES (api.http)
+### 3 - EXTENSÕES VSCODE INSTALADAS
 
-    GET http://localhost:8080/
-
-    ###
-
-    GET http://localhost:8080/listar
-
-    ###
-
-    POST http://localhost:8080/cadastrar
-    Content-type: application/json
-
-    {
-      "nome": "Lúcio",
-      "endereco":"Rua Alexandrino de Alencar 1592",
-      "RG": "1010297644/MD"
    
-    }
-
-    ###
-
-    PUT http://localhost:8080/editar?id=abe043be-b771-47cd-981f-a4dc8d936159
-    Content-type: application/json
-
-    {
-      "nome": "Lúcio Lemos",
-      "endereco":"Rua Alexandrino de Alencar 1592",
-      "RG": "1010297644/MD"
-   
-    }
-
-    ### 
-
-    DELETE http://localhost:8080/excluir?id=abe043be-b771-47cd-981f-a4dc8d936159
-    
-

@@ -45,7 +45,7 @@ router.post('/', (req, res) => {
 
 // MÉTODO GET - ROTA LISTAR
 router.get('/', (req, res) => {
-    res.json({ listar: Object.values(alunos) })
+    res.json({ alunos: Object.values(alunos) })
 })
 
 
