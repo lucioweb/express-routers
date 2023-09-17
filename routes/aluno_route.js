@@ -1,23 +1,16 @@
 const express = require('express')
 const { v4: uuidv4 } = require('uuid');
-const app = express()
-app.use(express.json())
-
+const router = express.Router()
 const alunos = {}
-
-// MÉTODO GET - ROTA BARRA
-app.get('/', (req, res) => {
-    res.json({ msg: "Olá! Bem vindo ao projeto Node JS com express!" })
-})
 
 
 // MÉTODO GET - ROTA PESQUISAR (GET by Id)
-app.get('/pesquisar/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     res.json({ aluno: alunos[req.params.id] })
 })
 
 // MÉTODO PUT - ROTA EDITAR
-app.put('/editar', (req, res) => {
+router.put('/', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
         const aluno = req.body
@@ -31,7 +24,7 @@ app.put('/editar', (req, res) => {
 })
 
 // MÉTODO DELETE - ROTA EXCLUIR
-app.delete('/excluir', (req, res) => {
+router.delete('/', (req, res) => {
     const id = req.query.id
     if (id && alunos[id]) {
         delete alunos[id]
@@ -42,7 +35,7 @@ app.delete('/excluir', (req, res) => {
 })
 
 // MÉTODO POST - ROTA CADASTRAR
-app.post('/cadastrar', (req, res) => {
+router.post('/', (req, res) => {
     const aluno = req.body
     const idAluno = uuidv4()
     aluno.id = idAluno
@@ -51,11 +44,9 @@ app.post('/cadastrar', (req, res) => {
 })
 
 // MÉTODO GET - ROTA LISTAR
-app.get('/listar', (req, res) => {
+router.get('/', (req, res) => {
     res.json({ listar: Object.values(alunos) })
 })
 
-// INICIALIZANDO O SERVIDOR
-app.listen(8080, () => {
-    console.log('Servidor pronto na porta 8080')
-})
+
+module.exports = router
