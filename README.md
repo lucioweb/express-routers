@@ -34,6 +34,16 @@ O Express é um framework incrível e possui diversas características que facil
 * Definir as configurações comuns da aplicação web, como a porta a ser usada para conexão e a localização dos modelos que são usados para renderizar a resposta.
 * Adicionar novos processos de requisição por meio de "middleware" em qualquer ponto da "fila" de requisições.
 
+####  ✔️ AJV - VALIDAÇÃO
+Agora que já temos o arquivo de rotas organizado, vamos ver como validar os dados de entrada. Para a validação, utilizaremos uma biblioteca muito conhecida no Javascript, a Ajv.   
+     
+    $ npm install ajv --save
+
+####  ✔️ AJV FORMAT - VALIDAÇÃO
+        
+    $ npm install ajv-formats --save
+
+
 ### 2 - SCRIPT DE INICIALIZAÇÃO DO SERVIDOR EXPRESS NO `package.json` COM O NODEMON
 
     ...

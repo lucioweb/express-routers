@@ -1,0 +1,33 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/usuario
+
+###
+
+GET http://localhost:8080/usuario/425ff2ad-d097-46ee-b0ba-071c4abbd37f
+
+###
+
+POST http://localhost:8080/usuario
+Content-type: application/json
+
+{
+    "email": "luciolemos.j5@gmail.com",
+    "senha":"diferent@1968#" 
+}
+
+###
+
+PUT http://localhost:8080/usuario?id=c371cec8-cf70-429b-8291-a6fb31b14303
+Content-type: application/json
+
+{
+    "email": "luciolemos.j5@gmail.com",
+    "senha":"diferent@1968#" 
+}
+
+### 
+
+DELETE http://localhost:8080/usuario?id=c371cec8-cf70-429b-8291-a6fb31b14303

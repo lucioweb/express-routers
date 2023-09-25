@@ -1,0 +1,33 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/post
+
+###
+
+GET http://localhost:8080/post/425ff2ad-d097-46ee-b0ba-071c4abbd37f
+
+###
+
+POST http://localhost:8080/post
+Content-type: application/json
+
+{
+    "titulo_post": "A política como a arte de enganar os homens",
+    "descricao":"Rua Lúcia Viveiros nº 1112"
+}
+
+###
+
+PUT http://localhost:8080/post?id=22c030c2-9341-4f21-ad1b-3ffbbcd6f52c
+Content-type: application/json
+
+{
+   "titulo_post": "Política e ética conjuntural",
+    "descricao":"A política em uma abordagem ética"  
+}
+
+### 
+
+DELETE http://localhost:8080/post?id=c371cec8-cf70-429b-8291-a6fb31b14303
