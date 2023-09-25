@@ -6,7 +6,7 @@ GET http://localhost:8080/usuario
 
 ###
 
-GET http://localhost:8080/usuario/425ff2ad-d097-46ee-b0ba-071c4abbd37f
+GET http://localhost:8080/usuario/d2615a10-5043-4d7c-8a26-918e8de7b6ac
 
 ###
 
@@ -14,8 +14,8 @@ POST http://localhost:8080/usuario
 Content-type: application/json
 
 {
-    "email": "luciolemos.j5@gmail.com",
-    "senha":"diferent@1968#" 
+    "email": "lucio.lemos.385@ufrn.edu.br",
+    "senha":"Diferent45@" 
 }
 
 ###
@@ -30,4 +30,4 @@ Content-type: application/json
 
 ### 
 
-DELETE http://localhost:8080/usuario?id=c371cec8-cf70-429b-8291-a6fb31b14303
+DELETE http://localhost:8080/usuario?id=d2615a10-5043-4d7c-8a26-918e8de7b6ac

@@ -6,7 +6,7 @@ const usuarios = {} // Variável do tipo objeto
 // Validação com AJV
 const usuarioSchema = require('../schemas/usuario.schema')
 const Ajv = require('ajv')
-const ajv = new Ajv() // Inicializa
+const ajv = new Ajv()
 const addFormats = require("ajv-formats")
 addFormats(ajv)
 
@@ -25,10 +25,9 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const usuario = req.body
 
-
     // Validação com AJV
-    const validate = ajv.compile(usuarioSchema)
-    const valid = validate(usuario)
+    const validate = ajv.compile(usuarioSchema) // INSERÇÃO DE CÓDIGO ORINDO DO AJV
+    const valid = validate(usuario) // INSERÇÃO DE CÓDIGO ORINDO DO AJV
 
     if (valid) {
         const idUsuario = uuidv4()
